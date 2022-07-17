@@ -1,0 +1,57 @@
+div.box {
+    position: relative;
+    top: 36px;
+    left: 13vh;
+    width: 192vh;
+    height: 85vh;
+    border-radius: 30px;
+    border: 3px #73AD21;
+    background-color: darkseagreen;
+}
+
+div.nav {
+    position: relative;
+}
+
+div.cv {
+     position: relative;
+     left: 15vh;
+     top: 15vh;
+}
+
+div.description {
+    position: relative;
+    box-sizing: border-box;
+    width: 305px;
+    top: 8vh;
+    left: 15vh;
+    text-align: justify;
+}
+
+div.profiles {
+    position: relative;
+    width: 10px;
+    top: -146px;
+    left: 94vh;
+}
+
+div.image {
+    position: relative;
+    height: 50vh;
+    width: 50vh;
+    top: -77vh;
+    left: 110vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li.nav-li {
+    float: left;
+    padding: 20px;
+}
+
+li.profiles-li {
+    padding: 10px
+}
