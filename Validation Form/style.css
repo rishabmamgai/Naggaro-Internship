@@ -1,0 +1,24 @@
+body {
+    background-color: bisque;
+}
+
+form {
+    position: relative;
+    box-sizing: border-box;
+    width: 70vh;
+    left: 26vh;
+    top: 2vh;
+    border-style: groove;
+    border-radius: 10px;
+    padding: 12px;
+    border-color: chartreuse;
+}
+
+#submitValidation {
+    width: 14vh;
+    height: 6vh;
+    cursor: pointer;
+    border-width: 1px;
+    border-radius: 8px;
+    background-color: turquoise;
+}
