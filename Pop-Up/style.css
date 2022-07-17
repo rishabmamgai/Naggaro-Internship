@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+}
+
+.group {
+    position: relative;
+    width: 50%;
+    height: 80%;
+    left: 22%;
+    top: 10vh;
+}
+
+.box {
+    position: relative;
+    display: none;
+    padding: 4px;
+    width: 70vh;
+    left: 14%;
+    top: 8vh;
+    color: aqua;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: double;
+    border-radius: 5px;
+}
+
+.btn {
+    height: 6vh;
+    border-style: hidden;
+    border-radius: 5px;
+    background-color: springgreen;
+}
+
+#submitBtn {
+    position: relative;
+    width: 14vh;
+    height: 7vh;
+    top: 8px;
+    border-radius: 5px;
+    background-color: turquoise;
+}
+
+i {
+    background-color: orangered;
+    height: 3vh;
+    width: 3vh;
+    text-align: center;
+    font-size: 3vh;
+    float: right;
+    top: 10px;
+    position: relative;
+    cursor: pointer;
+}
