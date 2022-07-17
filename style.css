@@ -1,0 +1,65 @@
+body {
+    background: rgb(37,34,86);
+    background: linear-gradient(90deg, rgba(37,34,86,1) 14%, rgba(14,31,207,1) 68%, rgba(105,28,164,1) 86%);
+}
+
+.info {
+    position: relative;
+    width: 40%;
+    left: 30%;
+    color: aqua;
+    border-style: groove;
+    border-radius: 5px;
+    border-color: cornflowerblue;
+    box-shadow: 10px 10px 16px #000000;
+}
+
+.projects-list {
+    position: relative;
+    width: 40%;
+    left: 30%;
+    top: 2vh;
+    color: aqua;
+    border-style: groove;
+    border-radius: 5px;
+    border-color: cornflowerblue;
+    box-shadow: 10px 10px 16px #000000;
+}
+
+.project {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.project:first-of-type {
+    padding-top: 4px;
+}
+
+.project-name {
+    text-align: left;
+}
+
+.btns {
+    position: relative;
+    float: right;
+    top: -6vh;
+}
+
+button {
+    border-style: none;
+    width: 5vh;
+    height: 5vh;
+    background-color: transparent;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: antiquewhite;
+}
+
+i {
+    font-size: 20px;
+}
