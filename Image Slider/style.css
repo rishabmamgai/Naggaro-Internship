@@ -1,0 +1,68 @@
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.slider {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    top: 15vh;
+    left: 35vh;
+}
+
+img {
+    position: relative;
+    width: 100vh;
+    height: 63vh;
+    top: -15px;
+    border-radius: 10px;
+}
+
+.slide {
+    position: relative;
+    display: none;
+    width: 65.3%;
+    height: 92.5%;
+    left: 24vh;
+    top: 2vh;
+}
+
+.slide-btns {
+    position: relative;
+    width: 132vh;
+    left: 10vh;
+}
+
+#left {
+    position: relative;
+    top: 50%;
+    float: left;
+    cursor: pointer;
+    border-style: none;
+    font-size: 18px;
+    color: aquamarine;
+}
+
+#right {
+    position: relative;
+    bottom: 38%;
+    float: right;
+    cursor: pointer;
+    border-style: none;
+    font-size: 18px;
+    color: aquamarine;
+}
+
+ul {
+    position: relative;
+    width: 14vh;
+    left: 60vh;
+    top: 6px;
+}
+
+.fa-circle {
+    font-size: 8px;
+    color: cyan;
+}
