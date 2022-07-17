@@ -1,0 +1,40 @@
+div.box {
+    position: relative;
+    width: 167vh;
+    left: 22vh;
+    border-style: outset;
+    border-width: 9px;
+    border-color: aquamarine;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: powderblue;
+}
+
+div.more-images {
+    position: relative;
+    top: 10px;
+    display: none;
+}
+
+button.see-more {
+    background-color: powderblue;
+    border-style: none;
+    color: blue; 
+    text-decoration: underline;
+}
+
+button.see-more:hover {
+    cursor: pointer;
+}
+
+p.text {
+    text-align: justify;
+}
+
+img.images {
+    height: 250px;
+    width: 250px;
+}
