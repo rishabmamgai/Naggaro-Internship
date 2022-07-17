@@ -1,0 +1,56 @@
+body {
+    background-color: sandybrown;
+}
+
+h5 {
+    text-align: center;
+    padding: 10px;
+}
+
+#scorecards {
+    position: relative;
+    width: 204vh;
+    left: 10vh;
+    top: -10vh;
+}
+
+#groups {
+    position: relative;
+    left: 0vh;
+    top: 12vh;
+    margin: 8vh;
+}
+
+#match1, #match2, #match3, #match4, #match5, #match6 {
+    position: relative;
+    width: 60vh;
+    height: 32vh;
+    top: 6px;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 18px;
+    background-color: antiquewhite;
+}
+
+#score1 {
+    position: relative;
+    float: left;
+    left: 34px;
+}
+
+#score2 {
+    position: relative;
+    left: 140px;
+}
+
+#status {
+    position: relative;
+    text-align: center;
+    bottom: 10px;
+}
+
+#venue {
+    position: relative;
+    top: -11px;
+    text-align: center;
+}
