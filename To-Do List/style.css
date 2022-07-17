@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: verdana;
+    text-transform: capitalize;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(90,135,3);
+    background: linear-gradient(90deg, rgba(90,135,3,1) 0%, rgba(43,113,140,1) 58%, rgba(201,49,49,1) 100%);}
+
+.container {
+    height: 450px;
+    width: 362px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5 px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#input {
+    height: 50px;
+    width: 86%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #666;
+    color: #fff;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+#input::placeholder {
+    color: #bbb;
+}
+
+#add {
+    position: relative;
+    width: 7vh;
+    height: 7vh;
+    top: 3px;
+    font-size: 22px;
+    border-radius: 9px;
+    border-style: hidden;
+    color: darkgrey;
+    background: antiquewhite;
+    cursor: pointer;
+}
+
+.list {
+    box-sizing: border-box;
+    background: #eee;
+    color: #333;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.list .fa-check, .fa-trash {
+    position: relative;
+    cursor: pointer;
+    float: right;
+}
+
+.list .fa-check {
+    color: green;
+}
+
+.list .fa-trash {
+    color: red;
+}
+
+li {
+    position: relative;
+    padding: 5px;
+    list-style-type: none;
+}
