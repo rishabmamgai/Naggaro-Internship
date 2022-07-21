@@ -1,0 +1,40 @@
+body {
+    background-color: cadetblue;
+}
+
+#card {
+    width: 18rem;
+    left: 82vh;
+    top: 5vh;
+    background-color: cyan;
+}
+
+.fields {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+i {
+    transform: rotate(90deg);
+}
+
+label, input {
+    position: relative;
+    width: 44vh;
+    text-align: left;
+}
+
+img {
+    height: 30vh;
+}
+
+button {
+    position: relative;
+    height: 6vh;
+    top: 8px;
+    margin: 5px;
+    color: purple;
+    border-style: none;
+    border-radius: 5px;
+    background-color: deepskyblue;
+}
