@@ -1,0 +1,72 @@
+body {
+    background-color: turquoise;
+}
+
+.calculator {
+    position: relative;
+    width: 54vh;
+    height: 70vh;
+    left: 85vh;
+    top: 16vh;
+}
+
+.display {
+    position: relative;
+    width: 56vh;
+    height: 17vh;
+    left: -12px;
+    color: dodgerblue;
+    background-color: black;
+}
+
+#expression {
+    font-size: 22px;
+}
+
+p {
+    position: relative;
+    text-align: right;
+    width: 56vh;
+    padding-right: 10px;
+    padding-top: 14px;
+    margin-bottom: 0px;
+}
+
+button {
+    width: 14vh;
+    height: 11vh;
+    padding: 0px;
+    border-width: thin;
+    background-color: powderblue;
+    transition: width .1s;
+}
+
+button:hover {
+    width: 14.5vh;
+    height: 11.5vh;
+}
+
+#left-col, #center-col, #right-col {
+    width: 14vh;
+    height: 11vh;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.all-clear {
+    background-color: burlywood;
+}
+
+.clear {
+    background-color: bisque;
+}
+
+.not-num, .all-clear, .clear {
+    color: chocolate;
+}
+
+#equal {
+    width: 28vh;
+    background-color: palegreen;
+    font-size: 25px;
+}
