@@ -1,0 +1,48 @@
+body {
+    background-color: darkcyan;
+}
+
+.btns {
+    height: 10%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+button {
+    position: relative;
+    width: 14vh;
+    height: 7vh;
+    top: 8px;
+    color: teal;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#text {
+    height: 86%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: wheat;
+}
+
+textarea {
+    position: relative;
+    top: 15vh;
+}
+
+#black {
+    background-color: black;
+}
+
+#limegreen {
+    background-color: limegreen;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#deepskyblue {
+    background-color: deepskyblue;
+}
