@@ -1,0 +1,67 @@
+body {
+    background-color: teal;
+}
+
+#search-box {
+    position: relative;
+    top: 15%;
+    width: 75vh;
+    height: 18vh;
+    padding: 8px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+
+#movie-box {
+    display: none;
+    position: relative;
+    top: 25%;
+    width: fit-content;
+    height: 42vh;
+    padding: 8px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+
+#search-row {
+    position: relative;
+    top: 4vh;
+    margin: 0px;
+}
+
+#movie-row {
+    position: relative;
+    top: 5vh;
+    margin: 0px;
+}
+
+#search {
+    width: 47vh;
+    margin-right: 0px;
+}
+
+#submit {
+    width: 16vh;
+    background-color: skyblue;
+}
+
+#poster {
+    width: 28vh;
+}
+
+#movie {
+    position: relative;
+    width: fit-content;
+}
+
+img {
+    width: 24vh;
+    height: 29vh;
+    border-radius: 5px;
+}
+
+h4, p {
+    text-align: left;
+}
