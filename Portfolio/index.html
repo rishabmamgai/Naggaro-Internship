@@ -3,50 +3,359 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
     <link rel="stylesheet" href="style.css">
-  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/40a85485d4.js" crossorigin="anonymous"></script>
+
     <title> Rishab's Portfolio </title>
 </head>
 
-<body style="background-color: thistle">
-    <div class="box">
-        <div class="nav">
-            <ul>
-                <a href="#"> <li class="nav-li"> <h3> Home </h3> </li> </a>
-                <a href="#"> <li class="nav-li"> <h3> About </h3> </li> </a>
-                <a href="#"> <li class="nav-li"> <h3> Skills </h3> </li> </a>
-                <a href="#"> <li class="nav-li"> <h3> ContactMe </h3> </li> </a>
-            </ul>
-        </div>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="navbar-li">
+                <a onclick="goTo('homeDiv')">
+                    <b> Home </b>
+                </a>
+            </li>
+            <li class="navbar-li">
+                <a onclick="goTo('aboutDiv')">
+                    <b> About </b>
+                </a>
+            </li>
+            <li class="navbar-li">
+                <a onclick="goTo('educationDiv')">
+                    <b> Education </b>
+                </a>
+            </li>
+            <li class="navbar-li">
+                <a onclick="goTo('skillsDiv')">
+                    <b> Skills </b>
+                </a>
+            </li>
+            <li class="navbar-li">
+                <a onclick="goTo('projectsDiv')">
+                    <b> Projects </b>
+                </a>
+            </li>
+            <li class="navbar-li">
+                <a onclick="goTo('contactDiv')">
+                    <b> ContactMe </b>
+                </a>
+            </li>
+        </ul>
+    </div>
 
-        <div class="description">
-            <h1 style="font-family: cursive; font-size: 42px"> Hi, I'm Rishab </h1>
-            <h3 style="font-family: monospace; font-size: 20px"> Python Developer </h3>
-            <p style="font-family: system-ui"></p>
-                Skilled in Computer Vision, Data Analysis and training Machine Learning models. Developing optimal backend solutions
-                with Django.
-            </p>
+    <div class="portfolio">
+        <div class="box" id="homeDiv">
+            <div class="description">
+                <h1> Hi, I'm Rishab </h1>
+                <div id="animate-1">
+                    <h3> Python Developer </h3>
+                </div>
+                <p>
+                    Skilled in Computer Vision, Data Analysis and training Machine Learning models. Developing optimal backend solutions
+                    with Django.
+                </p>
+
+                <a href="https://drive.google.com/uc?export=view&id=18EbS1gbJXpRTr7aq4zSsnu_RJtU2GOrq">
+                    <button> Resume </button>
+                </a>
+            </div>
+
+            <div class="profile-section">
+                <div id="profile-img">
+                    <img id="my-img" src="https://drive.google.com/uc?export=view&id=1QkWr6Ec5kKCbM7y4I9kGIJhTACYHDpJ2">
+                </div>
+            </div>
         </div>
         
-        <div class="cv">
-            <button style="width: 116px; height: 42px; border-radius: 5px; border-style: none; background-color: lightsteelblue"> 
-                <a style="color: black; text-decoration: none" href="https://drive.google.com/uc?export=view&id=1aMRvdHCyeRNq2Npibvj70QPcoD1cCuwS"> Resume </a>
-            </button>
+        <div class="box" id="aboutDiv">
+            <h2 id="header">
+                About
+            </h2>
+
+            <div class="about-section">
+                <div class="describe">
+                    <p>
+                        I am pursuing Bachelors of Technology in Electronics And Communications Engineering.
+                        Having a great interest in Machine Learning and Data Analytics with Python. Errors keep me awake and working.
+                    </p>
+                    <p> I think, code, fix and improvise. </p>
+                    <p> I develop websites with Django and also have a taste of JavaScript. You choose, I build. </p>
+                </div>
+
+                <div class="defineMe">
+                    <p class="func">
+                        <span style="color: cornflowerblue;"> def </span>
+                        <span style="color: darkkhaki;"> __define__ </span>
+                        <span style="color: gold;"> ( </span>
+                        <span style="color: darkturquoise;"> self </span>
+                        <span style="color: gold;"> ) </span>
+                        <span style="color: white;"> : </span>
+                    </p>
+                    <p class="define">
+                        <span style="color: darkturquoise;"> self </span> 
+                        <span style="color: white;"> . </span>
+                        <span style="color: white;"> name </span>
+                        <span style="color: white;"> = </span>
+                        <span style="color: darksalmon;"> Rishab Mamgai </span>
+                    </p>
+                    <p class="define">
+                        <span style="color: darkturquoise;"> self </span> 
+                        <span style="color: white;"> . </span>
+                        <span style="color: white;"> profession </span>
+                        <span style="color: white;"> = </span>
+                        <span style="color: darksalmon;"> [Python Developer, Web Developer] </span>
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="profiles">
-            <ul>
-                <a href="https://www.linkedin.com/in/rishab-mamgai-33042b21a"> <li class="profiles-li"> <img style="width: 25px; height: 25px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"> </li> </a>
-                <a href="https://github.com/rishabmamgai"> <li class="profiles-li"> <img style="width: 25px; height: 25px" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"> </li> </a>
-                <a href="https://mail.google.com"> <li class="profiles-li"> <img style="width: 25px; height: 25px" src="data:image/png;base64,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"> </li> </a>
-            </ul>
+        <div class="box" id="educationDiv">
+            <h2 id="header">
+                Education
+            </h2>
+
+            <div class="education-section">
+                <div class="graduation">
+                    <h2> Bachelor's of Technology </h2>
+                    <h3> Bharati Vidyapeeth's College of Engineering, New Delhi </h3>
+                    <h4> Electronics and Communications Engineering </h4>
+                    <h4> 2019 - 2023 </h4>
+                    <h4> CGPA - 9.04 </h4>
+                </div>
+
+                <div class="intermediate">
+                    <h2> Intermediate </h2>
+                    <h3> St Crispin's Senior Secondary School </h3>
+                    <h4> 2018 - 2019 </h4>
+                    <h4> Percentage - 93% </h4>
+                </div>
+
+                <div class="high-school">
+                    <h2> High School </h2>
+                    <h3> St Crispin's Senior Secondary School </h3>
+                    <h4> 2016 - 2017 </h4>
+                    <h4> CGPA - 9.6 </h4>
+                </div>
+            </div>
         </div>
 
-        <div class="image">
-            <img src="https://drive.google.com/uc?export=view&id=1QkWr6Ec5kKCbM7y4I9kGIJhTACYHDpJ2" style="width: 350px; height: 350px; border-top-left-radius: 66px; border-bottom-right-radius: 359px; border-top-right-radius: 132px; border-bottom-left-radius: 66px;">
+        <div class="box" id="skillsDiv">
+            <h2 id="header">
+                Skills
+            </h2>
+
+            <div class="skills-section">
+                <div id="skills">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/python.png"/>
+                    <h3> Python </h3>
+                </div>
+                <div id="skills">
+                    <img src="https://img.icons8.com/ios/50/000000/java-coffee-cup-logo--v1.png"/>
+                    <h3> Java </h3>
+                </div>
+                <div id="skills">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/c.png"/>
+                    <h3> C/C++ </h3>
+                </div>
+                <div id="skills">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/javascript-logo.png"/>
+                    <h3> JavaScript </h3>
+                </div>
+                <div id="skills">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/django.png"/>
+                    <h3> Django </h3>
+                </div>
+                <div id="skills">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/mind-map.png"/>
+                    <h3> Machine Learning </h3>
+                </div>
+                <div id="skills">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/html-5--v1.png"/>
+                    <h3> HTML </h3>
+                </div>
+                <div id="skills">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/css3.png"/>
+                    <h3> CSS </h3>
+                </div>
+                <div id="skills">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/>
+                    <h3> MySql </h3>
+                </div>
+            </div>
         </div>
 
+        <div class="box" id="projectsDiv">
+            <h2 id="header">
+                Projects
+            </h2>
+
+            <div class="projects">               
+
+                <div class="card">
+                    <div class="inner">
+                        <div class="front">
+                            <img src="https://drive.google.com/uc?export=view&id=1mUSfl5Lg2dXUA5u6de_SGY0j_7vMy046">
+                        </div>
+
+                        <div class="back">
+                            <!-- <h4> Digit Detector </h4>
+                            <p>
+                                MNIST based digit detector using 3-layered custom neural network. Integrated with Paint 3D for drawing and detection.
+                            </p> -->
+                            <h4> To-Do List </h4>
+                            <div class="urls">
+                                <a href="https://github.com/rishabmamgai/Naggaro-Internship/tree/main/To-Do%20List"> <i class="fa-brands fa-github"></i> </a>
+                                <a href="https://rishabmamgai.github.io/Naggaro-Internship/To-Do%20List/index.html"> <i class="fa-solid fa-link"></i> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="inner">
+                        <div class="front">
+                            <img src="https://drive.google.com/uc?export=view&id=1Qn-PhE-G5nCbQ8xMoDWkTakrP_YWorSU">
+                        </div>
+
+                        <div class="back">
+                            <!-- <h4> Stock Price Prediction and Recommendation System </h4>
+                            <p>
+                                A basic model for stock price prediction and recommendation system using KNN and Linear Regression. Uses NIFTY-50
+                                database for 15 companies.
+                            </p> -->
+                            <h4> Calculator </h4>
+                            <div class="urls">
+                                <a href="https://github.com/rishabmamgai/Naggaro-Internship/tree/main/Calculator"> <i class="fa-brands fa-github"></i> </a>
+                                <a href="https://rishabmamgai.github.io/Naggaro-Internship/Calculator/index.html"> <i class="fa-solid fa-link"></i> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="inner">
+                        <div class="front">
+                            <img src="https://drive.google.com/uc?export=view&id=1ME1oMBtXnnXAIJfKtQGPgjNSv6X-nX4K">
+                        </div>
+
+                        <div class="back">
+                            <!-- <h4> Sign Language </h4>
+                            <p>
+                                Real time sign language detector. Uses American Sign Language dataset to detect hand signs for different alphabets from
+                                video frames.
+                            </p> -->
+                            <h4> Toggle Theme </h4>
+                            <div class="urls">
+                                <a href="https://github.com/rishabmamgai/Naggaro-Internship/tree/main/Toggle%20Theme"> <i class="fa-brands fa-github"></i> </a>
+                                <a href="https://rishabmamgai.github.io/Naggaro-Internship/Toggle%20Theme/index.html"> <i class="fa-solid fa-link"></i> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="inner">
+                        <div class="front">
+                            <img src="https://drive.google.com/uc?export=view&id=1O9hr7BF2d47E3ouZnV4fXwzlBlEhyojB">
+                        </div>
+
+                        <div class="back">
+                            <!-- <h4> One Site </h4>
+                            <p>
+                                Real time sign language detector. Uses American Sign Language dataset to detect hand signs for different alphabets from
+                                video frames.
+                            </p> -->
+                            <h4> Weight Converter </h4>
+                            <div class="urls">
+                                <a href="https://github.com/rishabmamgai/Naggaro-Internship/tree/main/Weight%20Converter"> <i class="fa-brands fa-github"></i> </a>
+                                <a href="https://rishabmamgai.github.io/Naggaro-Internship/Weight%20Converter/index.html"> <i class="fa-solid fa-link"></i> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="inner">
+                        <div class="front">
+                            <img src="data:image/jpeg;base64,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">
+                        </div>
+
+                        <div class="back">
+                            <h4> Nagarro Internship </h4>
+                            <p>
+                                <!-- Built Front-end and Back-end projects as Nagarro Summer Intern 2022. -->
+                                Front-end and Back-end projects built in Naggaro Summer Internship 2022.
+                            </p>
+                            <div class="urls">
+                                <a href="https://github.com/rishabmamgai/Naggaro-Internship"> <i class="fa-brands fa-github"></i> </a>
+                                <a href="https://rishabmamgai.github.io/Naggaro-Internship/"> <i class="fa-solid fa-link"></i> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                  
+            </div>
+        </div>
+
+        <div class="box" id="contactDiv">
+            <h2 id="header">
+                Contact
+            </h2>
+
+            <div class="contactMe">
+                <div id="contactForm">
+                    <form action="">
+                        <div class="form-control">
+                            <label for="your-name"> Your Name </label>
+                            <input id="your-name" type="text">
+                        </div>
+                        <div class="form-control">
+                            <label for="your-email"> Your Email </label>
+                            <input id="your-email" type="text">
+                        </div>
+                        <div class="form-control">
+                            <label for="your-msg"> Your Message </label>
+                            <textarea id="your-msg" cols="30" rows="7"></textarea>
+                        </div>
+
+                        <button> Send </button>
+                    </form>
+                </div>
+
+                <div id="contact">
+                    <p id="contact-key"> EMAIL </p>
+                    <p id="contact-value"> rishabmamgai2001@gmail.com </p>
+
+                    <p id="contact-key"> PHONE </p>
+                    <p id="contact-value"> 8860351840 </p>
+
+                    <p id="contact-key"> PROFILES </p>
+                    <div class="profiles">
+                        <ul>
+                            <li class="profile-link"> <a href="https://www.linkedin.com/in/rishab-mamgai-33042b21a/"> <i class="fa-brands fa-linkedin"></i> </a> </li>
+                            <li class="profile-link"> <a href="https://github.com/rishabmamgai"> <i class="fa-brands fa-github"></i> </a> </li>
+                            <li class="profile-link"> <a href="https://stackoverflow.com/users/16306884/rishab-mamgai"> <i class="fa-brands fa-stack-overflow"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p> Developed by Rishab Mamgai </p>
+    </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
