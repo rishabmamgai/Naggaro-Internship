@@ -58,9 +58,8 @@ li.navbar-li:hover {
     display: inline-block;
     top: 36px;
     left: 12vh;
-    width: 89%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width: 85%;
+    padding: 25px;
     margin-bottom: 5vh;
     border-radius: 30px;
     border: 3px hsl(85, 68%, 40%);
@@ -71,8 +70,7 @@ li.navbar-li:hover {
 .description {
     position: relative;
     float: left;
-    width: 40%;
-    left: 15vh;
+    width: 45%;
     margin-top: 10vh;
     text-align: justify;
 }
@@ -129,16 +127,18 @@ li.navbar-li:hover {
 
 .profile-section {
     position: relative;
-    display: inline-block;
-    width: 32%;
-    height: 65%;
-    left: 38vh;
+    float: right;
+    width: 45%;
+    height: 70%;
     margin-top: 2%;
 }
 
 #my-img {
-    width: 359px;
-    height: 350px;
+    position: relative;
+    width: 75%;
+    height: 80%;
+    margin-top: 7%;
+    margin-left: 13%;
     border-radius: 15px;
 }
 
@@ -146,10 +146,10 @@ li.navbar-li:hover {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 89%;
+    width: 93%;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    left: 11vh;
+    margin-left: 10%;
 }
 
 .about-section {
@@ -193,6 +193,7 @@ li.navbar-li:hover {
 .education-section {
     flex-direction: column;
     margin-left: 1%;
+    text-align: center;
 }
 
 .graduation, .intermediate, .high-school {
@@ -251,10 +252,6 @@ li.navbar-li:hover {
     margin-right: 25px;
     margin-top: 5vh;
     perspective: 1000px;
-}
-
-.card:nth-child(3n+1) {
-    margin-left: 24px;
 }
 
 .inner {
@@ -321,6 +318,7 @@ li.navbar-li:hover {
     height: 10%;
     margin-top: 2%;
     border-radius: 5px;
+    border-style: none;
     background-color: aqua;
 }
 
@@ -378,7 +376,7 @@ i {
     font-size: 25px;
 }
 
-li.profile-link {
+.profile-link {
     float: left;
     margin-right: 20px;
 }
@@ -387,7 +385,7 @@ footer {
     width: 100%;
     height: 8%;
     background-color: black;
-    top: 11vh;
+    margin-top: 8%;
     position: relative;
     color: aliceblue;
     display: flex;
@@ -400,4 +398,93 @@ footer p {
     color: aquamarine;
 }
 
-  /* https://www.google.com/imgres?imgurl=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F5652010.jpg&imgrefurl=https%3A%2F%2Fwallpaperaccess.com%2Fportfolio&tbnid=ExjRIVfaEN2EPM&vet=12ahUKEwjrherOw6_5AhWhLrcAHeTQB7cQMyg3egQIARBS..i&docid=EiI-nA3cIF4APM&w=1600&h=1000&q=background%20images%20for%20programmer%20portfolio&ved=2ahUKEwjrherOw6_5AhWhLrcAHeTQB7cQMyg3egQIARBS */
+@media only screen and (max-width: 700px) {
+    .navbar {
+        display: none;
+    }
+
+    .portfolio {
+        top: 0%;
+    }
+
+    #my-img {
+        height: 50%;
+        height: 40%;
+        margin-top: 18%;
+    }
+
+    li {
+        width: 5%;
+    }
+
+    .about-section {
+        flex-direction: column-reverse;
+    }
+
+    .about-section, .education-section, .skills-section, .projects, .contactMe {
+        width: 86%;
+    }
+
+    .describe {
+        width: 100%;
+        color: slategray;
+        margin-left: -20%;
+    }
+
+    .defineMe {
+        width: 100%;
+    }
+    
+    .graduation, .intermediate, .high-school {
+        width: 75%;
+        align-self: center;
+    }
+
+    #skills {
+        width: 24%;
+        font-size: small;
+    }
+
+    #skills:nth-child(5n+1) {
+        margin-left: 1.5%;
+    }
+
+    #skills:nth-child(3n+1) {
+        margin-left: 5%;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card:nth-child(n) {
+        margin-left: -12px;
+    }
+
+    .contactMe {
+        flex-direction: column-reverse;
+    }
+
+    #contact, #contactForm {
+        width: 87%;
+        margin-left: 0%;
+    }
+
+    #contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4%;
+    }
+
+    #contactForm {
+        margin-top: 10%;
+    }
+
+    .profile-link {
+        margin-right: 25px;
+    }
+
+    footer {
+        margin-top: 3%;
+    }
+}
